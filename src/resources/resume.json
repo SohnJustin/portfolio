@@ -1,0 +1,131 @@
+{
+    "education": [
+        {
+            "summary": {
+                "name": "La Mirada High School",
+                "url": "https://www.lamiradahs.org/",
+                "location": "La Mirada, CA"
+            },
+            "achievement":{
+                "title": "General Education Development (GED)",
+                "startDate": "SEP 2011",
+                "endDate": "JUN 2015"
+            }
+        },
+        {
+            "summary":{
+                "name": "Fullerton College",
+                "url": "https://www.fullcoll.edu/",
+                "location": "Fullerton, CA"
+            },
+            "achievement":{
+                "title": "Associates in Computer Science",
+                "startDate": "AUG 2017",
+                "endDate": "MAY 2022"
+            }
+        },
+        {
+            "summary":{
+                "name": "California State University, Fullerton",
+                "url":"http://fullerton.edu/",
+                "location":"Fullerton, CA"
+            },
+            "achievement":{
+                "title": "Bachelor's of Computer Science",
+                "startDate": "AUG 2022",
+                "endDate": "PRESENT"
+            }
+        }
+    ],
+    "experience":[
+        {
+            "summary":{
+                "name": "Stater Bros. Market",
+                "url": "https://www.staterbros.com/",
+                "location":"La Mirada, CA"
+            },
+            "achievement":{
+                "title": "Courtesy Clerk",
+                "startDate": "NOV 2016",
+                "endDate": "JAN 2017",
+                "details": "Maintained Cleanliness of the facility and ensured proper transportation of public goods."
+            }
+        },
+        {
+            "summary":{
+                "name": "Pokicraft 2",
+                "url":  "UNAVAILABLE",
+                "location": "Buena Park, CA"
+            },
+            "achievement":{
+                "title": "Server",
+                "startDate":"OCT 2018",
+                "endDate":"JAN 2019",
+                "details": "Prepared and served food to customers and performed hourly maintainence of the store's appearance."
+            }
+        }
+    ],
+    "Projects":[
+        {
+            "summary":{
+                "name": "rps.s",
+                "url": "https://github.com/NotSohn/rps.s"
+            },
+            "achievement":{
+                "title": "Rock Paper Scissors in x86_64 YASM",
+                "details": [
+                    "A game of Rock Paper Scissors to take in user's input and put it against a randomly generated outcome from the computer."
+                ]
+            }
+
+        },
+        {
+            "summary":{
+                "name": "guessNumberGame",
+                "url": "https://github.com/NotSohn/guessNumberGame"
+            },
+            "achievement":{
+                "title": "Guess Randomly Generated Number",
+                "details":[
+                     "The user puts in the lowest and highest integers to place a number somewhere in between",
+                     "The user will be tracked on how many guesses it takes to find their number",
+                     "The output will help the user tell whether the number inputted was greater or less than the randomly generated number"
+                ]
+            }
+        }
+    ],
+    "skills":[
+        {
+            "skillName": "Programming Languages",
+            "list":[
+                "Python 3.0+",
+                "C/C++",
+                "Intel x86_64 YASM Assembly",
+                "Java",
+                "BASH/Unix",
+                "JavaScript/TypeScript"
+            ]
+        },
+        {
+            "skillName": "Web Technologies",
+            "list":[
+                "Proficient in React.js",
+                "React-Native"
+            ]
+        }
+    ],
+    "hobbies":[
+        {
+            "category": "Video Games",
+            "details":[
+                "Played video game since kindergarten",
+                "Plays variety of games such as VALORANT, League of Legends, CSGO, Rainbow Six:Siege,  OSU, and many more.",
+                "Attended/Participated in In-person tournaments"
+            ]
+        },
+        {
+            "category": "Music",
+            "details": "Enjoys many variety of music genres such as Jazz, RnB, HipHop, Pop, EDM"
+        }
+    ]
+}
