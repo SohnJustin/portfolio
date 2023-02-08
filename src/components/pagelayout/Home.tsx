@@ -4,18 +4,13 @@ import pageTransition from "../../styles/pageVariant";
 import pageVariant from "../../styles/pageVariant";
 import {
   MobileFirstIntroduction,
-  //Introduction,
-  Prompt,
-  MobileSkills,
-  List,
   StyleSelfShot,
   MobileSkillList,
   DesktopSkillList,
   BulletPoint,
-  DesktopLanguage,
   DesktopHobbies,
-  DesktopSkills,
   MobileFirstPrompt,
+  MobileFirstSkills,
 } from "../../styles/RouteStyle/Home.style";
 import {
   Background,
@@ -41,8 +36,7 @@ function Home() {
         <StyleSelfShot src={SelfShot1} />
         <MobileFirstIntroduction />
         <MobileFirstPrompt />
-        <MobileSkills>Programming Languages</MobileSkills>
-        <DesktopLanguage>Programming Languages</DesktopLanguage>
+        <MobileFirstSkills>Programming Languages</MobileFirstSkills>
         <BulletPoint>
           <DesktopSkillList>JavaScript</DesktopSkillList>
           <DesktopSkillList>TypeScript</DesktopSkillList>
@@ -56,13 +50,12 @@ function Home() {
           Javascript | Typescript | C | C++ | Java | Python | Intel x86_64 YASM
           Assembly{" "}
         </MobileSkillList>
-        <MobileSkills>Skills</MobileSkills>
-        <DesktopSkills>Skills</DesktopSkills>
+        <MobileFirstSkills>Skills</MobileFirstSkills>
         <MobileSkillList>
           ReactJS | Shellscipt | HTML | CSS | MaterialUI | StyledComponents |
           PyQT | QTDesigner | PySide6 | Github{" "}
         </MobileSkillList>
-        <MobileSkills>Hobbies</MobileSkills>
+        <MobileSkillList>Hobbies</MobileSkillList>
         <MobileSkillList>
           Current hobbies I like to do is playing video games, video editing,
           and Coding!
