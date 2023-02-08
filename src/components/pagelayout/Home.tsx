@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import pageTransition from "../../styles/pageVariant";
 import pageVariant from "../../styles/pageVariant";
 import {
-  Introduction,
+  MobileFirstIntroduction,
+  //Introduction,
   Prompt,
   MobileSkills,
   List,
-  // CardWrapper,
   StyleSelfShot,
   MobileSkillList,
   DesktopSkillList,
@@ -15,6 +15,7 @@ import {
   DesktopLanguage,
   DesktopHobbies,
   DesktopSkills,
+  MobileFirstPrompt,
 } from "../../styles/RouteStyle/Home.style";
 import {
   Background,
@@ -38,12 +39,8 @@ function Home() {
       <Background />
       <HomeContainer>
         <StyleSelfShot src={SelfShot1} />
-        <Introduction>Justin Sohn</Introduction>
-        <Prompt>
-          Hi! My name is Justin Sohn and I am currently attend California State
-          University of Fullerton and have been putting my focus in become a
-          Front End Web Developer.
-        </Prompt>
+        <MobileFirstIntroduction />
+        <MobileFirstPrompt />
         <MobileSkills>Programming Languages</MobileSkills>
         <DesktopLanguage>Programming Languages</DesktopLanguage>
         <BulletPoint>

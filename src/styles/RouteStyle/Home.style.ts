@@ -1,17 +1,39 @@
 import styled from "styled-components";
+import { up, down, createTheme } from "styled-breakpoints";
 import SelfShot from "../../resources/selfshot.jpg";
-/*
-const Background = styled.div`
-  padding-top: 10%;
-  width: 100%;
-  height: 100%;
-  background-color: #36393f;
+
+const themeWithBreakpoints = createTheme({
+  tablet: "768px",
+  desktop: "1024px",
+} as const);
+
+const MobileFirstIntroduction = styled.h1`
+  //mobile
+  //margin-right: 50%;
+  font-size: 45px;
+  ::before {
+    content: "Justin Sohn";
+  }
+
+  //tablet
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    padding-left: 0px;
+    text-align: center;
+    justify-content: center;
+    content: "Justin Sohn";
+  }
+
+  //desktop
+  @media screen and (min-width: 1024px) {
+    width: 50%;
+    font-size: 60px;
+    text-align: left;
+    justify-content: center;
+    padding-left: 5%;
+  }
 `;
-const HomeContainer = styled.div`
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-`;*/
+/*
 const Introduction = styled.h1`
   font-size: 60px;
   text-align: left;
@@ -24,6 +46,34 @@ const Introduction = styled.h1`
     justify-content: center;
   }
 `;
+*/
+
+const MobileFirstPrompt = styled.div`
+  //mobile
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 10%;
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  ::before {
+    content: "Hi! My name is Justin Sohn and I am currently attend California State University of Fullerton and have been putting my focus in become a Front End Web Developer.";
+  }
+
+  //tablet
+  @media screen and (min-width: 768px) {
+    padding-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 85%;
+    padding-bottom: 10%;
+  }
+
+  //desktop
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+  }
+`;
+
 const Prompt = styled.div`
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: left;
@@ -32,7 +82,7 @@ const Prompt = styled.div`
   font-size: 20px;
   width: 50%;
   padding-bottom: 10%;
-  @media screen and (max-width: 901px) {
+  @media screen and (max-width: tablet) {
     padding-left: 10%;
     width: 80%;
     justify-content: center;
@@ -59,10 +109,11 @@ const MobileSkillList = styled.h6`
 const DesktopLanguage = styled.div`
   font-size: 25px;
   text-align: left;
-  justify-content: left;
+  justify-content: space-between;
   padding-left: 15%;
   padding-top: 10%;
   width: 50%;
+  content: "Programming Language", "Skills";
   @media screen and (max-width: 770px) {
     display: none;
   }
@@ -78,6 +129,7 @@ const DesktopSkills = styled.h3`
     display: none;
   }
 `;
+
 const DesktopHobbies = styled.h3``;
 const List = styled.span`
   font-size: 20px;
@@ -122,7 +174,7 @@ const StyleSelfShot = styled.img`
 `;
 export {
   // HomeContainer,
-  Introduction,
+  //Introduction,
   // Background,
   // CardWrapper,
   Prompt,
@@ -135,4 +187,6 @@ export {
   DesktopSkills,
   DesktopHobbies,
   BulletPoint,
+  MobileFirstIntroduction,
+  MobileFirstPrompt,
 };
