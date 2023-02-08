@@ -9,14 +9,13 @@ const themeWithBreakpoints = createTheme({
 
 const MobileFirstIntroduction = styled.h1`
   //mobile
-  //margin-right: 50%;
   font-size: 45px;
   ::before {
     content: "Justin Sohn";
   }
 
   //tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     font-size: 60px;
     padding-left: 0px;
     text-align: center;
@@ -26,41 +25,25 @@ const MobileFirstIntroduction = styled.h1`
 
   //desktop
   @media screen and (min-width: 1024px) {
-    width: 50%;
     font-size: 60px;
     text-align: left;
     justify-content: center;
     padding-left: 5%;
   }
 `;
-/*
-const Introduction = styled.h1`
-  font-size: 60px;
-  text-align: left;
-  justify-content: center;
-  padding-left: 5%;
-  @media screen and (max-width: 901px) {
-    padding-left: 0px;
-    text-align: center;
-    width: 95%;
-    justify-content: center;
-  }
-`;
-*/
 
 const MobileFirstPrompt = styled.div`
   //mobile
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-left: 10%;
-  width: 80%;
+  width: 85%;
   justify-content: center;
   text-align: center;
   ::before {
-    content: "Hi! My name is Justin Sohn and I am currently attend California State University of Fullerton and have been putting my focus in become a Front End Web Developer.";
+    content: "Ipsum velit non est eu magna consequat do ea elit. Veniam ullamco ut ea quis dolore ut est eu eu magna qui in reprehenderit. Nisi occaecat labore occaecat exercitation dolor esse deserunt mollit magna adipisicing nulla enim mollit consequat. Laborum Lorem commodo ea ut proident. Voluptate labore consequat nulla labore adipisicing nisi velit Lorem ipsum Lorem ea consectetur exercitation.";
   }
-
   //tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     padding-left: 50px;
     margin-top: 10px;
     font-size: 20px;
@@ -70,69 +53,40 @@ const MobileFirstPrompt = styled.div`
 
   //desktop
   @media screen and (min-width: 1024px) {
-    width: 100%;
+    text-align: left;
+    padding-left: 50px;
+    width: 50%;
   }
 `;
 
-const Prompt = styled.div`
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: left;
-  padding-left: 50px;
-  margin-top: 10px;
-  font-size: 20px;
-  width: 50%;
-  padding-bottom: 10%;
-  @media screen and (max-width: tablet) {
-    padding-left: 10%;
-    width: 80%;
-    justify-content: center;
-    text-align: center;
-  }
-`;
-const MobileSkills = styled.div`
-  font-size: 25px;
+const MobileFirstSkills = styled.div`
+  //mobile
+  font-size: 16px;
   text-align: center;
   justify-items: center;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 20px;
+
+  //tablet
   @media screen and (min-width: 769px) {
-    display: none;
+    font-size: 16px;
+  }
+  //desktop
+  @media screen and (min-width: 1024px) {
+    font-size: 15px;
+    text-align: left;
+    justify-content: left;
+    padding-left: 15%;
+    padding-top: 10%;
+    width: 30%;
   }
 `;
+
 const MobileSkillList = styled.h6`
   @media screen and (min-width: 769px) {
     display: none;
   }
-`;
-
-const DesktopLanguage = styled.div`
-  font-size: 25px;
-  text-align: left;
-  justify-content: space-between;
-  padding-left: 15%;
-  padding-top: 10%;
-  width: 50%;
-  content: "Programming Language", "Skills";
-  @media screen and (max-width: 770px) {
-    display: none;
-  }
-`;
-const DesktopSkills = styled.h3`
-  font-size: 25px;
-  text-align: left;
-  justify-content: left;
-  padding-left: 15%;
-  padding-top: 10%;
-  width: 50%;
-  @media screen and (max-width: 770px) {
-    display: none;
-  }
-`;
-
-const DesktopHobbies = styled.h3``;
-const List = styled.span`
-  font-size: 20px;
 `;
 const DesktopSkillList = styled.li`
   //padding-left: 15%;
@@ -142,10 +96,15 @@ const DesktopSkillList = styled.li`
     display: none;
   }
 `;
-
 const BulletPoint = styled.ul`
   padding-left: 15%;
 `;
+const List = styled.span`
+  font-size: 20px;
+`;
+
+const DesktopHobbies = styled.h3``;
+
 /*
 const CardWrapper = styled.div`
   display: flex;
@@ -173,20 +132,14 @@ const StyleSelfShot = styled.img`
   }
 `;
 export {
-  // HomeContainer,
-  //Introduction,
-  // Background,
-  // CardWrapper,
-  Prompt,
-  MobileSkills,
+  //Prompt,
   List,
   StyleSelfShot,
   MobileSkillList,
   DesktopSkillList,
-  DesktopLanguage,
-  DesktopSkills,
   DesktopHobbies,
   BulletPoint,
   MobileFirstIntroduction,
   MobileFirstPrompt,
+  MobileFirstSkills,
 };
