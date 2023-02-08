@@ -37,6 +37,7 @@ function Home() {
         <MobileFirstIntroduction />
         <MobileFirstPrompt />
         <MobileFirstSkills>Programming Languages</MobileFirstSkills>
+        <MobileFirstSkills>Skills</MobileFirstSkills>
         <BulletPoint>
           <DesktopSkillList>JavaScript</DesktopSkillList>
           <DesktopSkillList>TypeScript</DesktopSkillList>
@@ -50,7 +51,6 @@ function Home() {
           Javascript | Typescript | C | C++ | Java | Python | Intel x86_64 YASM
           Assembly{" "}
         </MobileSkillList>
-        <MobileFirstSkills>Skills</MobileFirstSkills>
         <MobileSkillList>
           ReactJS | Shellscipt | HTML | CSS | MaterialUI | StyledComponents |
           PyQT | QTDesigner | PySide6 | Github{" "}
