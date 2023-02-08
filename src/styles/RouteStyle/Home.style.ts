@@ -65,7 +65,6 @@ const MobileFirstSkills = styled.div`
   text-align: center;
   justify-items: center;
   width: 100%;
-  padding-top: 30px;
   padding-bottom: 20px;
 
   //tablet
@@ -74,12 +73,11 @@ const MobileFirstSkills = styled.div`
   }
   //desktop
   @media screen and (min-width: 1024px) {
+    display: flex;
     font-size: 15px;
     text-align: left;
-    justify-content: left;
-    padding-left: 15%;
-    padding-top: 10%;
-    width: 30%;
+    justify-content: space-between;
+    width: 50%;
   }
 `;
 
@@ -89,7 +87,8 @@ const MobileSkillList = styled.h6`
   }
 `;
 const DesktopSkillList = styled.li`
-  //padding-left: 15%;
+  display: flex;
+  width: 50%;
   justify-content: left;
   text-align: left;
   @media screen and (max-width: 769px) {
