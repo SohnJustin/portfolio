@@ -61,11 +61,14 @@ const MobileFirstPrompt = styled.div`
 
 const MobileFirstSkills = styled.div`
   //mobile
+  text-decoration: underline;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: inline;
   font-size: 16px;
   text-align: center;
-  justify-items: center;
-  width: 100%;
-  padding-bottom: 20px;
+  justify-items: space-evenly;
+  width: 30%;
 
   //tablet
   @media screen and (min-width: 769px) {
@@ -73,11 +76,15 @@ const MobileFirstSkills = styled.div`
   }
   //desktop
   @media screen and (min-width: 1024px) {
-    display: flex;
-    font-size: 15px;
-    text-align: left;
-    justify-content: space-between;
-    width: 50%;
+    display: contents;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0px;
+    display: inline;
+    font-size: 24px;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 40%;
   }
 `;
 
@@ -88,15 +95,19 @@ const MobileSkillList = styled.h6`
 `;
 const DesktopSkillList = styled.li`
   display: flex;
-  width: 50%;
-  justify-content: left;
+  width: 40%;
+  justify-content: space-evenly;
   text-align: left;
+
   @media screen and (max-width: 769px) {
     display: none;
   }
 `;
 const BulletPoint = styled.ul`
-  padding-left: 15%;
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  justify-content: space-evenly;
 `;
 const List = styled.span`
   font-size: 20px;
@@ -104,15 +115,6 @@ const List = styled.span`
 
 const DesktopHobbies = styled.h3``;
 
-/*
-const CardWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
-`;
-*/
 const StyleSelfShot = styled.img`
   max-height: 60vw;
   max-width: 45vh;
