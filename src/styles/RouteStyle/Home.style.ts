@@ -34,6 +34,7 @@ const MobileFirstIntroduction = styled.h1`
 
 const MobileFirstPrompt = styled.div`
   //mobile
+  font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-left: 10%;
   width: 85%;
@@ -48,7 +49,6 @@ const MobileFirstPrompt = styled.div`
     margin-top: 10px;
     font-size: 20px;
     width: 85%;
-    padding-bottom: 10%;
   }
 
   //desktop
@@ -61,24 +61,17 @@ const MobileFirstPrompt = styled.div`
 
 const MobileFirstSkills = styled.div`
   //mobile
-  font-size: 16px;
-  text-align: center;
-  justify-items: center;
-  width: 100%;
-  padding-bottom: 20px;
 
-  //tablet
-  @media screen and (min-width: 769px) {
-    font-size: 16px;
-  }
-  //desktop
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    font-size: 15px;
-    text-align: left;
-    justify-content: space-between;
-    width: 50%;
-  }
+  font-size: 16px;
+  text-decoration: underline;
+  padding-top: 5vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline;
+  font-size: 12px;
+  text-align: center;
+  justify-items: space-evenly;
+  width: 5%;
 `;
 
 const MobileSkillList = styled.h6`
@@ -87,16 +80,24 @@ const MobileSkillList = styled.h6`
   }
 `;
 const DesktopSkillList = styled.li`
-  display: flex;
-  width: 50%;
-  justify-content: left;
+  display: flexbox;
+  width: 40%;
+  justify-content: space-evenly;
   text-align: left;
-  @media screen and (max-width: 769px) {
-    display: none;
-  }
+  font-size: 12px;
+
+  // @media screen and (max-width: 769px) {
+  //   display: none;
+  // }
 `;
 const BulletPoint = styled.ul`
-  padding-left: 15%;
+  /* padding-left: 5%;
+  padding-right: 5%; */
+  display: inline-block;
+  font-size: 12px;
+  width: 25vw;
+  text-align: left;
+  justify-content: space-between;
 `;
 const List = styled.span`
   font-size: 20px;
@@ -104,15 +105,6 @@ const List = styled.span`
 
 const DesktopHobbies = styled.h3``;
 
-/*
-const CardWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
-`;
-*/
 const StyleSelfShot = styled.img`
   max-height: 60vw;
   max-width: 45vh;

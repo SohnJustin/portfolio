@@ -47,14 +47,17 @@ function Home() {
           <DesktopSkillList>Python</DesktopSkillList>
           <DesktopSkillList>Intel x86_64 YASM Assembly</DesktopSkillList>
         </BulletPoint>
-        <MobileSkillList>
-          Javascript | Typescript | C | C++ | Java | Python | Intel x86_64 YASM
-          Assembly{" "}
-        </MobileSkillList>
-        <MobileSkillList>
-          ReactJS | Shellscipt | HTML | CSS | MaterialUI | StyledComponents |
-          PyQT | QTDesigner | PySide6 | Github{" "}
-        </MobileSkillList>
+        <BulletPoint>
+          <DesktopSkillList>ReactJS</DesktopSkillList>
+          <DesktopSkillList>Shellscript</DesktopSkillList>
+          <DesktopSkillList>HTML</DesktopSkillList>
+          <DesktopSkillList>CSS</DesktopSkillList>
+          <DesktopSkillList>MaterialUI</DesktopSkillList>
+          <DesktopSkillList>Styled Components</DesktopSkillList>
+          <DesktopSkillList>PyQT/QTDesigner</DesktopSkillList>
+          <DesktopSkillList>PySide6</DesktopSkillList>
+          <DesktopSkillList>Github</DesktopSkillList>
+        </BulletPoint>
         <MobileSkillList>Hobbies</MobileSkillList>
         <MobileSkillList>
           Current hobbies I like to do is playing video games, video editing,
