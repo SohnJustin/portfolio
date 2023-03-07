@@ -34,6 +34,7 @@ const MobileFirstIntroduction = styled.h1`
 
 const MobileFirstPrompt = styled.div`
   //mobile
+  font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-left: 10%;
   width: 85%;
@@ -48,7 +49,6 @@ const MobileFirstPrompt = styled.div`
     margin-top: 10px;
     font-size: 20px;
     width: 85%;
-    padding-bottom: 10%;
   }
 
   //desktop
@@ -61,31 +61,17 @@ const MobileFirstPrompt = styled.div`
 
 const MobileFirstSkills = styled.div`
   //mobile
-  text-decoration: underline;
-  padding-left: 10%;
-  padding-right: 10%;
-  display: inline;
+
   font-size: 16px;
+  text-decoration: underline;
+  padding-top: 5vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline;
+  font-size: 12px;
   text-align: center;
   justify-items: space-evenly;
-  width: 30%;
-
-  //tablet
-  @media screen and (min-width: 769px) {
-    font-size: 16px;
-  }
-  //desktop
-  @media screen and (min-width: 1024px) {
-    display: contents;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 0px;
-    display: inline;
-    font-size: 24px;
-    text-align: center;
-    justify-content: space-evenly;
-    width: 40%;
-  }
+  width: 5%;
 `;
 
 const MobileSkillList = styled.h6`
@@ -94,20 +80,24 @@ const MobileSkillList = styled.h6`
   }
 `;
 const DesktopSkillList = styled.li`
-  display: flex;
+  display: flexbox;
   width: 40%;
   justify-content: space-evenly;
   text-align: left;
+  font-size: 12px;
 
-  @media screen and (max-width: 769px) {
-    display: none;
-  }
+  // @media screen and (max-width: 769px) {
+  //   display: none;
+  // }
 `;
 const BulletPoint = styled.ul`
+  /* padding-left: 5%;
+  padding-right: 5%; */
   display: inline-block;
-  width: 40%;
-  text-align: center;
-  justify-content: space-evenly;
+  font-size: 12px;
+  width: 25vw;
+  text-align: left;
+  justify-content: space-between;
 `;
 const List = styled.span`
   font-size: 20px;
