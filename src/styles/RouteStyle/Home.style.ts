@@ -58,21 +58,16 @@ const MobileFirstPrompt = styled.div`
     width: 50%;
   }
 `;
-
-const MobileFirstSkills = styled.div`
-  //mobile
-
+const MobileSkills = styled.div`
   font-size: 16px;
   text-decoration: underline;
-  padding-top: 5vw;
-  padding-left: 5%;
-  padding-right: 5%;
-  display: inline;
-  font-size: 12px;
+  display: inline-block;
+  font-size: 16px;
   text-align: center;
-  justify-items: space-evenly;
-  width: 5%;
+  width: 50%;
 `;
+
+const DesktopSkills = styled.div``;
 
 const MobileSkillList = styled.h6`
   @media screen and (min-width: 769px) {
@@ -80,24 +75,17 @@ const MobileSkillList = styled.h6`
   }
 `;
 const DesktopSkillList = styled.li`
-  display: flexbox;
   width: 40%;
   justify-content: space-evenly;
   text-align: left;
   font-size: 12px;
-
-  // @media screen and (max-width: 769px) {
-  //   display: none;
-  // }
 `;
 const BulletPoint = styled.ul`
-  /* padding-left: 5%;
-  padding-right: 5%; */
   display: inline-block;
   font-size: 12px;
-  width: 25vw;
   text-align: left;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 40%;
 `;
 const List = styled.span`
   font-size: 20px;
@@ -112,12 +100,12 @@ const StyleSelfShot = styled.img`
   width: auto;
   float: right;
   margin-right: 5vw;
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1024px) {
     background-color: blue;
     float: none;
     margin-right: 0vw;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 769px) {
     max-height: 70vw;
     max-width: 70vw;
   }
@@ -132,5 +120,5 @@ export {
   BulletPoint,
   MobileFirstIntroduction,
   MobileFirstPrompt,
-  MobileFirstSkills,
+  MobileSkills,
 };

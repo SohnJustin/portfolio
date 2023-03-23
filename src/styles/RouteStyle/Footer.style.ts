@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterContainer = styled.div`
   width: 100%;
-  height: 100px;
+  min-height: 100%;
   background: #23272a;
   display: flex;
   justify-content: center;
@@ -21,12 +21,14 @@ const SocialMediaArea = styled.div`
   color: white;
 `;
 const SocialMediaLink = styled.a``;
-const SocialMediaIcon = styled.svg`
+const SocialMediaIcon = styled.div`
+  display: inline;
+  justify-items: center;
   padding-top: 15px;
   color: white;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 25px;
+
   cursor: pointer;
 `;
 const CopyRight = styled.p`
