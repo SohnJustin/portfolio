@@ -10,7 +10,9 @@ import {
   BulletPoint,
   DesktopHobbies,
   MobileFirstPrompt,
-  MobileSkills,
+  MobileFirstSkills,
+  DesktopSkills,
+  DesktopSkillPrompt,
 } from "../../styles/RouteStyle/Home.style";
 import {
   Background,
@@ -36,8 +38,8 @@ function Home() {
         <StyleSelfShot src={SelfShot1} />
         <MobileFirstIntroduction />
         <MobileFirstPrompt />
-        <MobileSkills>Programming Languages</MobileSkills>
-        <MobileSkills>Skills</MobileSkills>
+        <MobileFirstSkills>Programming Languages</MobileFirstSkills>
+        <MobileFirstSkills>Skills</MobileFirstSkills>
         <BulletPoint>
           <DesktopSkillList>JavaScript</DesktopSkillList>
           <DesktopSkillList>TypeScript</DesktopSkillList>
@@ -58,6 +60,15 @@ function Home() {
           <DesktopSkillList>PySide6</DesktopSkillList>
           <DesktopSkillList>Github</DesktopSkillList>
         </BulletPoint>
+        <DesktopSkills>Programming Languages</DesktopSkills>
+        <DesktopSkillPrompt>
+          C/C++, Javascript/Typescript, Python, Java, Intel X86_64 YASM Assembly
+        </DesktopSkillPrompt>
+        <DesktopSkills> Skills </DesktopSkills>
+        <DesktopSkillPrompt>
+          ReactJS, Shellscript, HTML, CSS, MaterialUI, Media Query, Styled
+          Components, PyQT/QtDesigner, Pyside6, Github
+        </DesktopSkillPrompt>
         <MobileSkillList>Hobbies</MobileSkillList>
         <MobileSkillList>
           Current hobbies I like to do is playing video games, video editing,

@@ -7,7 +7,8 @@ const Background = createGlobalStyle`
 `;
 const PageContainer = styled.div`
   height: 100%;
-  padding-top: 10%;
+  width: 100%;
+  padding-top: 5%;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
