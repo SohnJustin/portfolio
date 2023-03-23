@@ -4,8 +4,9 @@ import pageTransition from "../../styles/pageVariant";
 import pageVariant from "../../styles/pageVariant";
 import {
   Background,
-  HomeContainer,
+  PageContainer,
 } from "../../styles/RouteStyle/GlobalBackground.style";
+import { TempExperience } from "../../styles/RouteStyle/Experience.style";
 function Experiences() {
   return (
     <motion.div
@@ -17,12 +18,9 @@ function Experiences() {
       transition={pageTransition}
     >
       <Background />
-      <HomeContainer>
-        <div className="about">
-          {" "}
-          <h1>This is the Experiences</h1>
-        </div>
-      </HomeContainer>
+      <PageContainer>
+        <TempExperience />
+      </PageContainer>
     </motion.div>
   );
 }

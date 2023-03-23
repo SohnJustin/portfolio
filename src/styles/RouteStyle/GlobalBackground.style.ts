@@ -5,10 +5,11 @@ const Background = createGlobalStyle`
     background: #36393f;
   }
 `;
-const HomeContainer = styled.div`
+const PageContainer = styled.div`
+  height: 100%;
   padding-top: 10%;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 `;
-export { Background, HomeContainer };
+export { Background, PageContainer };

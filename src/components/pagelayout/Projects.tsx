@@ -10,7 +10,7 @@ import //ProjectList,
 "../../styles/RouteStyle/Project.style";
 import {
   Background,
-  HomeContainer,
+  PageContainer,
 } from "../../styles/RouteStyle/GlobalBackground.style";
 import Home from "./Home";
 import ProjectItems from "../ProjectItems";
@@ -26,7 +26,7 @@ function Projects() {
       transition={pageTransition}
     >
       <Background />
-      <HomeContainer></HomeContainer>
+      <PageContainer></PageContainer>
     </motion.div>
   );
 }

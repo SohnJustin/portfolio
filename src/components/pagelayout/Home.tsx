@@ -10,11 +10,11 @@ import {
   BulletPoint,
   DesktopHobbies,
   MobileFirstPrompt,
-  MobileFirstSkills,
+  MobileSkills,
 } from "../../styles/RouteStyle/Home.style";
 import {
   Background,
-  HomeContainer,
+  PageContainer,
 } from "../../styles/RouteStyle/GlobalBackground.style";
 import "../../resources/resume.json";
 import { Typography } from "@mui/material";
@@ -32,12 +32,12 @@ function Home() {
       transition={pageTransition}
     >
       <Background />
-      <HomeContainer>
+      <PageContainer>
         <StyleSelfShot src={SelfShot1} />
         <MobileFirstIntroduction />
         <MobileFirstPrompt />
-        <MobileFirstSkills>Programming Languages</MobileFirstSkills>
-        <MobileFirstSkills>Skills</MobileFirstSkills>
+        <MobileSkills>Programming Languages</MobileSkills>
+        <MobileSkills>Skills</MobileSkills>
         <BulletPoint>
           <DesktopSkillList>JavaScript</DesktopSkillList>
           <DesktopSkillList>TypeScript</DesktopSkillList>
@@ -45,7 +45,7 @@ function Home() {
           <DesktopSkillList>C++</DesktopSkillList>
           <DesktopSkillList>Java</DesktopSkillList>
           <DesktopSkillList>Python</DesktopSkillList>
-          <DesktopSkillList>Intel x86_64 YASM Assembly</DesktopSkillList>
+          <DesktopSkillList>Intel x86_64 YASM</DesktopSkillList>
         </BulletPoint>
         <BulletPoint>
           <DesktopSkillList>ReactJS</DesktopSkillList>
@@ -63,7 +63,7 @@ function Home() {
           Current hobbies I like to do is playing video games, video editing,
           and Coding!
         </MobileSkillList>
-      </HomeContainer>
+      </PageContainer>
     </motion.div>
   );
 }

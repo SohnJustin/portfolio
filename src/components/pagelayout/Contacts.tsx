@@ -7,7 +7,7 @@ import pageTransition from "../../styles/pageVariant";
 import pageVariant from "../../styles/pageVariant";
 import {
   Background,
-  HomeContainer,
+  PageContainer,
 } from "../../styles/RouteStyle/GlobalBackground.style";
 function Contacts() {
   return (
@@ -20,7 +20,7 @@ function Contacts() {
       transition={pageTransition}
     >
       <Background />
-      <HomeContainer>
+      <PageContainer>
         <div className="contacts">
           <h1>You can contact me through these apps.</h1>
           <div className="contactIcon">
@@ -38,7 +38,7 @@ function Contacts() {
             </a>
           </div>
         </div>
-      </HomeContainer>
+      </PageContainer>
     </motion.div>
   );
 }
