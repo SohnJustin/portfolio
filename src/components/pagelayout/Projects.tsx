@@ -13,6 +13,7 @@ import {
   PageContainer,
 } from "../../styles/RouteStyle/GlobalBackground.style";
 import Home from "./Home";
+import { ProjectTitle } from "../../styles/RouteStyle/Project.style";
 import ProjectItems from "../ProjectItems";
 
 function Projects() {
@@ -26,7 +27,12 @@ function Projects() {
       transition={pageTransition}
     >
       <Background />
-      <PageContainer></PageContainer>
+      <PageContainer>
+        <ProjectTitle>
+          I am currently working on transferring over all of the projects from
+          my github onto this website. Please check back later.
+        </ProjectTitle>
+      </PageContainer>
     </motion.div>
   );
 }
