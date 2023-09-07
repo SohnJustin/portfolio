@@ -45,7 +45,7 @@ const MobileFirstPrompt = styled.div`
   }
   //tablet
   @media screen and (min-width: 769px) {
-    padding-left: 50px;
+    padding-left: 30px;
     margin-top: 10px;
     font-size: 20px;
     width: 85%;
@@ -58,17 +58,47 @@ const MobileFirstPrompt = styled.div`
     width: 50%;
   }
 `;
-const MobileSkills = styled.div`
-  font-size: 16px;
+const MobileFirstSkills = styled.div`
+  //Mobile + Tablet
+  padding-top: 10%;
+  padding-left: 20px;
+  font-size: 12px;
   text-decoration: underline;
   display: inline-block;
   font-size: 16px;
-  text-align: center;
-  width: 50%;
+  text-align: left;
+  width: 40%;
+
+  //desktop
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 `;
 
-const DesktopSkills = styled.div``;
+const DesktopSkills = styled.div`
+  display: none;
+  @media screen and (min-width: 1024px) {
+    //Desktop view only
+    display: flex;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: left;
+  }
+`;
 
+const DesktopSkillPrompt = styled.div`
+  display: none;
+  @media screen and (min-width: 1024px) {
+    //Desktop view only
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 5vw;
+    text-align: left;
+    padding-left: 8%;
+  }
+`;
 const MobileSkillList = styled.h6`
   @media screen and (min-width: 769px) {
     display: none;
@@ -80,12 +110,17 @@ const DesktopSkillList = styled.li`
   text-align: left;
   font-size: 12px;
 `;
+
 const BulletPoint = styled.ul`
   display: inline-block;
   font-size: 12px;
-  text-align: left;
+  text-align: center;
   justify-content: space-evenly;
-  width: 40%;
+  width: 35%;
+  //desktop
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 `;
 const List = styled.span`
   font-size: 20px;
@@ -94,20 +129,23 @@ const List = styled.span`
 const DesktopHobbies = styled.h3``;
 
 const StyleSelfShot = styled.img`
+  //Mobile
   max-height: 60vw;
   max-width: 45vh;
   height: auto;
   width: auto;
-  float: right;
-  margin-right: 5vw;
-  @media only screen and (max-width: 1024px) {
-    background-color: blue;
-    float: none;
-    margin-right: 0vw;
+  float: center;
+
+  //Tablet
+  @media screen and (min-width: 769px) {
+    float: right;
+    max-height: 30vw;
+    max-width: 80vw;
   }
-  @media screen and (max-width: 769px) {
-    max-height: 70vw;
-    max-width: 70vw;
+  //Desktop
+  @media only screen and (min-width: 1024px) {
+    float: right;
+    margin-right: 5vw;
   }
 `;
 export {
@@ -120,5 +158,7 @@ export {
   BulletPoint,
   MobileFirstIntroduction,
   MobileFirstPrompt,
-  MobileSkills,
+  MobileFirstSkills,
+  DesktopSkills,
+  DesktopSkillPrompt,
 };
