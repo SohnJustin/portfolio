@@ -41,7 +41,7 @@ const MobileFirstPrompt = styled.div`
   justify-content: center;
   text-align: center;
   ::before {
-    content: "Ipsum velit non est eu magna consequat do ea elit. Veniam ullamco ut ea quis dolore ut est eu eu magna qui in reprehenderit. Nisi occaecat labore occaecat exercitation dolor esse deserunt mollit magna adipisicing nulla enim mollit consequat. Laborum Lorem commodo ea ut proident. Voluptate labore consequat nulla labore adipisicing nisi velit Lorem ipsum Lorem ea consectetur exercitation.";
+    content: "Hello! My name is Justin Sohn and I am currently a student at the California State University, Fullerton. I am a Computer Science major and I am interested in pursuing a career in front-end software engineering. I am currently looking for an internship so please feel free to contact me at through the contact page if you have any questions or concerns. Thank you!";
   }
   //tablet
   @media screen and (min-width: 769px) {
