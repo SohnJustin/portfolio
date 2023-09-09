@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterContainer = styled.div`
   width: 100%;
-  min-height: 100%;
+  min-height: 15%;
   background: #23272a;
   display: flex;
   justify-content: center;
@@ -10,7 +10,8 @@ const FooterContainer = styled.div`
   flex-direction: column;
   padding-top: 10px;
   position: absolute;
-  bottom: 0;
+  bottom: 0pt;
+  left: 0pt;
   @media only screen and (max-width: 600px) {
     .footer svg {
       font-size: 50px;
@@ -28,6 +29,7 @@ const SocialMediaIcon = styled.div`
   color: white;
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 30px;
 
   cursor: pointer;
 `;

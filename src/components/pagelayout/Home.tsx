@@ -69,6 +69,12 @@ function Home() {
           ReactJS, Shellscript, HTML, CSS, MaterialUI, Media Query, Styled
           Components, PyQT/QtDesigner, Pyside6, Github
         </DesktopSkillPrompt>
+        <DesktopSkills> Hobbies </DesktopSkills>
+        <DesktopSkillPrompt>
+          Current hobbies that I like to do is play video games such as League
+          of Legends, VALORANT, osu!. I also enjoy to go hiking and do video
+          editing on my spare time.
+        </DesktopSkillPrompt>
         <MobileSkillList>Hobbies</MobileSkillList>
         <MobileSkillList>
           Current hobbies I like to do is playing video games, video editing,
