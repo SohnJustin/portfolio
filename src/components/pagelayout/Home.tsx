@@ -22,6 +22,7 @@ import "../../resources/resume.json";
 import { Typography } from "@mui/material";
 import SelfShot1 from "../../resources/selfshot1.jpg";
 import SelfShot from "../../resources/selfshot.png";
+import { Analytics } from "@vercel/analytics/react";
 
 function Home() {
   return (
@@ -38,6 +39,7 @@ function Home() {
         <StyleSelfShot src={SelfShot1} />
         <MobileFirstIntroduction />
         <MobileFirstPrompt />
+        <Analytics />
         <MobileFirstSkills>Programming Languages</MobileFirstSkills>
         <MobileFirstSkills>Skills</MobileFirstSkills>
         <BulletPoint>
